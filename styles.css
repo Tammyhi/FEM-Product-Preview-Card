@@ -1,0 +1,29 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+/* Design System */
+
+/* Utility Classes */
+
+/* CSS Styling */
