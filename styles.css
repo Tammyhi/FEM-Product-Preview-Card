@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* CSS Reset */
 *,
 *::before,
@@ -23,7 +25,64 @@ p {
 }
 
 /* Design System */
+:root {
+  --clr-primary-text: hsl(212deg 21% 14%);
+  --clr-secondary-text: hsl(228deg 12% 48%);
+  --clr-main-background: hsl(30deg 38% 92%);
+  --clr-card-background: hsl(0deg 0% 100%);
+  --clr-button: hsl(158deg 36% 37%);
+  --clr-button-active: hsl(158deg 42% 18%);
+
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+
+  --letter-spacing: 5px;
+
+  --fs-smaller: 12px;
+  --fs-small: 13px;
+  --fs-base: 14px;
+  --fs-big: 32px;
+
+  --lh-med: 110%;
+  --lh-big: 120%;
+  --lh-bigger: 160%;
+}
 
 /* Utility Classes */
+.type-heading {
+  font-size: var(--fs-big);
+  font-family: Fraunces, sans-serif;
+  font-weight: bold;
+}
+
+.type-button {
+  font-size: var(--fs-base);
+  font-weight: bold;
+  line-height: var(--lh-med);
+}
+
+.type-body {
+  font-size: var(--fs-base);
+  line-height: var(--lh-bigger);
+}
+
+.type-item {
+  font-size: var(--fs-smaller);
+  line-height: var(--lh-big);
+  letter-spacing: var(--letter-spacing);
+}
+
+.type-price-old {
+  font-size: var(--fs-small);
+  line-height: var(--lh-big);
+  text-decoration: line-through;
+}
 
 /* CSS Styling */
+body {
+  font-family: Montserrat, sans-serif;
+}
